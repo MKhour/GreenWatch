@@ -11,10 +11,13 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            LandingView()
-                .tabItem {
-                    Label("Home", systemImage: "leaf") // "globe.americas.fill"
-                }
+            VStack {
+                LandingView()
+                tabBackground
+            }
+            .tabItem {
+                Label("Home", systemImage: "leaf") // "globe.americas.fill"
+            }
             
             GovernmentView()
                 .tabItem {
@@ -28,6 +31,14 @@ struct ContentView: View {
                     // "leaf"
                 }
         }
+    }
+    
+    private var tabBackground: some View {
+        Rectangle()
+            .fill(Color.clear)
+            .frame(height: 5, alignment: .bottom)
+            .background(Color("Light off white"))
+            // .background(Color.green.opacity(0.2))
     }
     
 }

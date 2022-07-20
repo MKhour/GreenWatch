@@ -9,7 +9,11 @@ import SwiftUI
 
 struct GovernmentView: View {
     var body: some View {
-        Text("Government")
+        ScrollView {
+            ImageHeaderComponent(title: "Government".uppercased(), titleType: .tabTitle, imagePath: "cropped government photo")
+            Spacer()
+        }
+        .background(Color.white)
     }
 }
 

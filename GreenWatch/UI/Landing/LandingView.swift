@@ -10,9 +10,10 @@ import SwiftUI
 struct LandingView: View {
     var body: some View {
         ScrollView {
-            Text("Landing")
+            ImageHeaderComponent(title: "Green Watch".uppercased(), titleType: .appTitle, imagePath: "cropped landing photo")
+            Spacer()
         }
-        .background(.orange)
+        .background(Color.white)
     }
 }
 

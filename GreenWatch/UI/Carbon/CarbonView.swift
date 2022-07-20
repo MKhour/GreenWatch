@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CarbonView: View {
     var body: some View {
-        Text("Carbon!")
+        ScrollView {
+            ImageHeaderComponent(title: "Carbon".uppercased(), titleType: .tabTitle, imagePath: "cropped carbon photo")
+            Spacer()
+        }
+        .background(Color.white)
     }
 }
 
