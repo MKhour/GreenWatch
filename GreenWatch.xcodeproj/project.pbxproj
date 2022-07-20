@@ -14,6 +14,14 @@
 		0EE0DEF228837D94009141E9 /* GreenWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEF128837D94009141E9 /* GreenWatchTests.swift */; };
 		0EE0DEFC28837D94009141E9 /* GreenWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEFB28837D94009141E9 /* GreenWatchUITests.swift */; };
 		0EE0DEFE28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */; };
+		0EE0DF0B28838B92009141E9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0A28838B91009141E9 /* Response.swift */; };
+		0EE0DF0D2883A2AC009141E9 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */; };
+		0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0F288797AD009141E9 /* LandingViewModel.swift */; };
+		0EE0DF122887980B009141E9 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF112887980B009141E9 /* LandingView.swift */; };
+		0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF172887987F009141E9 /* GovernmentViewModel.swift */; };
+		0EE0DF1A2887989D009141E9 /* CarbonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF192887989D009141E9 /* CarbonViewModel.swift */; };
+		0EE0DF1C288798D9009141E9 /* GovernmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF1B288798D9009141E9 /* GovernmentView.swift */; };
+		0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF1D2887990F009141E9 /* CarbonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		0EE0DEF728837D94009141E9 /* GreenWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0DEFB28837D94009141E9 /* GreenWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchUITests.swift; sourceTree = "<group>"; };
 		0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EE0DF0A28838B91009141E9 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		0EE0DF0F288797AD009141E9 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		0EE0DF112887980B009141E9 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		0EE0DF172887987F009141E9 /* GovernmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernmentViewModel.swift; sourceTree = "<group>"; };
+		0EE0DF192887989D009141E9 /* CarbonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonViewModel.swift; sourceTree = "<group>"; };
+		0EE0DF1B288798D9009141E9 /* GovernmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernmentView.swift; sourceTree = "<group>"; };
+		0EE0DF1D2887990F009141E9 /* CarbonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,15 @@
 		0EE0DEDF28837D92009141E9 /* GreenWatch */ = {
 			isa = PBXGroup;
 			children = (
+				0EE0DF1628879858009141E9 /* Carbon */,
+				0EE0DF1428879846009141E9 /* Government */,
 				0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */,
+				0EE0DF0E28879796009141E9 /* Landing */,
+				0EE0DF0A28838B91009141E9 /* Response.swift */,
 				0EE0DEE228837D92009141E9 /* ContentView.swift */,
 				0EE0DEE428837D94009141E9 /* Assets.xcassets */,
 				0EE0DEE628837D94009141E9 /* Preview Content */,
+				0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */,
 			);
 			path = GreenWatch;
 			sourceTree = "<group>";
@@ -125,6 +146,33 @@
 				0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */,
 			);
 			path = GreenWatchUITests;
+			sourceTree = "<group>";
+		};
+		0EE0DF0E28879796009141E9 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				0EE0DF0F288797AD009141E9 /* LandingViewModel.swift */,
+				0EE0DF112887980B009141E9 /* LandingView.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		0EE0DF1428879846009141E9 /* Government */ = {
+			isa = PBXGroup;
+			children = (
+				0EE0DF172887987F009141E9 /* GovernmentViewModel.swift */,
+				0EE0DF1B288798D9009141E9 /* GovernmentView.swift */,
+			);
+			path = Government;
+			sourceTree = "<group>";
+		};
+		0EE0DF1628879858009141E9 /* Carbon */ = {
+			isa = PBXGroup;
+			children = (
+				0EE0DF192887989D009141E9 /* CarbonViewModel.swift */,
+				0EE0DF1D2887990F009141E9 /* CarbonView.swift */,
+			);
+			path = Carbon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE0DF1C288798D9009141E9 /* GovernmentView.swift in Sources */,
+				0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */,
+				0EE0DF1A2887989D009141E9 /* CarbonViewModel.swift in Sources */,
+				0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */,
+				0EE0DF122887980B009141E9 /* LandingView.swift in Sources */,
 				0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */,
+				0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */,
+				0EE0DF0D2883A2AC009141E9 /* NewsAPI.swift in Sources */,
+				0EE0DF0B28838B92009141E9 /* Response.swift in Sources */,
 				0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
