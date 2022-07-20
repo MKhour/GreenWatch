@@ -14,6 +14,7 @@ struct LandingView: View {
             Spacer()
         }
         .background(Color.white)
+        .ignoresSafeArea()
     }
 }
 

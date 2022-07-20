@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0E5018872887AD700099B31D /* ImageHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5018862887AD700099B31D /* ImageHeaderComponent.swift */; };
+		0E5018892887C1F20099B31D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5018882887C1F20099B31D /* Constants.swift */; };
+		0E50188B2887C31B0099B31D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50188A2887C31B0099B31D /* Montserrat-Regular.otf */; };
+		0E50188D2887C3290099B31D /* Montserrat-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50188C2887C3290099B31D /* Montserrat-Italic.otf */; };
+		0E5018942887C3790099B31D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E5018932887C3790099B31D /* Montserrat-Regular.otf */; };
+		0E5018962887C3840099B31D /* Montserrat-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E5018952887C3840099B31D /* Montserrat-Italic.otf */; };
+		0E5018982887C38E0099B31D /* Montserrat-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E5018972887C38E0099B31D /* Montserrat-LightItalic.otf */; };
+		0E50189A2887C3A10099B31D /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E5018992887C3A10099B31D /* Montserrat-Medium.otf */; };
+		0E50189C2887C3AA0099B31D /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189B2887C3AA0099B31D /* Montserrat-MediumItalic.otf */; };
+		0E50189E2887C3B30099B31D /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189D2887C3B30099B31D /* Montserrat-SemiBold.otf */; };
+		0E5018A02887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189F2887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf */; };
 		0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */; };
 		0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE228837D92009141E9 /* ContentView.swift */; };
 		0EE0DEE528837D94009141E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE428837D94009141E9 /* Assets.xcassets */; };
@@ -44,6 +54,18 @@
 
 /* Begin PBXFileReference section */
 		0E5018862887AD700099B31D /* ImageHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderComponent.swift; sourceTree = "<group>"; };
+		0E5018882887C1F20099B31D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0E50188A2887C31B0099B31D /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		0E50188C2887C3290099B31D /* Montserrat-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.otf"; path = "../../../Downloads/montserrat/Montserrat-Italic.otf"; sourceTree = "<group>"; };
+		0E5018912887C3540099B31D /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		0E5018932887C3790099B31D /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		0E5018952887C3840099B31D /* Montserrat-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Italic.otf"; sourceTree = "<group>"; };
+		0E5018972887C38E0099B31D /* Montserrat-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-LightItalic.otf"; path = "../../../../../Downloads/montserrat/Montserrat-LightItalic.otf"; sourceTree = "<group>"; };
+		0E5018992887C3A10099B31D /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.otf"; path = "../../../../../Downloads/montserrat/Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		0E50189B2887C3AA0099B31D /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-MediumItalic.otf"; path = "../../../../../Downloads/montserrat/Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
+		0E50189D2887C3B30099B31D /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "../../../../../Downloads/montserrat/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		0E50189F2887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.otf"; path = "../../../../../Downloads/montserrat/Montserrat-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		0E5018A12887C40B0099B31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0EE0DEDD28837D92009141E9 /* GreenWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchApp.swift; sourceTree = "<group>"; };
 		0EE0DEE228837D92009141E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,11 +114,13 @@
 		0E5018822887ACD50099B31D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				0E5018882887C1F20099B31D /* Constants.swift */,
+				0EE0DEE228837D92009141E9 /* ContentView.swift */,
+				0E5018902887C3470099B31D /* Fonts */,
 				0E5018852887AD570099B31D /* Components */,
 				0EE0DF1628879858009141E9 /* Carbon */,
 				0EE0DF1428879846009141E9 /* Government */,
 				0EE0DF0E28879796009141E9 /* Landing */,
-				0EE0DEE228837D92009141E9 /* ContentView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -125,6 +149,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		0E5018902887C3470099B31D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0E5018932887C3790099B31D /* Montserrat-Regular.otf */,
+				0E5018952887C3840099B31D /* Montserrat-Italic.otf */,
+				0E5018912887C3540099B31D /* Montserrat-Light.otf */,
+				0E5018972887C38E0099B31D /* Montserrat-LightItalic.otf */,
+				0E5018992887C3A10099B31D /* Montserrat-Medium.otf */,
+				0E50189B2887C3AA0099B31D /* Montserrat-MediumItalic.otf */,
+				0E50189D2887C3B30099B31D /* Montserrat-SemiBold.otf */,
+				0E50189F2887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0EE0DED428837D92009141E9 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +187,7 @@
 		0EE0DEDF28837D92009141E9 /* GreenWatch */ = {
 			isa = PBXGroup;
 			children = (
+				0E5018A12887C40B0099B31D /* Info.plist */,
 				0EE0DEE428837D94009141E9 /* Assets.xcassets */,
 				0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */,
 				0EE0DEE628837D94009141E9 /* Preview Content */,
@@ -177,6 +217,8 @@
 		0EE0DEFA28837D94009141E9 /* GreenWatchUITests */ = {
 			isa = PBXGroup;
 			children = (
+				0E50188C2887C3290099B31D /* Montserrat-Italic.otf */,
+				0E50188A2887C31B0099B31D /* Montserrat-Regular.otf */,
 				0EE0DEFB28837D94009141E9 /* GreenWatchUITests.swift */,
 				0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */,
 			);
@@ -314,8 +356,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5018962887C3840099B31D /* Montserrat-Italic.otf in Resources */,
+				0E50189A2887C3A10099B31D /* Montserrat-Medium.otf in Resources */,
+				0E5018A02887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf in Resources */,
 				0EE0DEE828837D94009141E9 /* Preview Assets.xcassets in Resources */,
 				0EE0DEE528837D94009141E9 /* Assets.xcassets in Resources */,
+				0E50189C2887C3AA0099B31D /* Montserrat-MediumItalic.otf in Resources */,
+				0E50188D2887C3290099B31D /* Montserrat-Italic.otf in Resources */,
+				0E5018942887C3790099B31D /* Montserrat-Regular.otf in Resources */,
+				0E50188B2887C31B0099B31D /* Montserrat-Regular.otf in Resources */,
+				0E5018982887C38E0099B31D /* Montserrat-LightItalic.otf in Resources */,
+				0E50189E2887C3B30099B31D /* Montserrat-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE0DF1C288798D9009141E9 /* GovernmentView.swift in Sources */,
+				0E5018892887C1F20099B31D /* Constants.swift in Sources */,
 				0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */,
 				0EE0DF1A2887989D009141E9 /* CarbonViewModel.swift in Sources */,
 				0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */,
@@ -512,6 +564,7 @@
 				DEVELOPMENT_TEAM = PG6YYZTULC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -541,6 +594,7 @@
 				DEVELOPMENT_TEAM = PG6YYZTULC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreenWatch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color.white)
+        UITabBar.appearance().unselectedItemTintColor = UIColor(Color("Deeper offwhite"))
+        // UITabBar.appearance().selectedItem = UIColor(Color("Deep green"))
+    }
+    
     var body: some View {
         TabView {
             VStack {
                 LandingView()
-                tabBackground
             }
             .tabItem {
                 Label("Home", systemImage: "leaf") // "globe.americas.fill"
@@ -31,16 +36,9 @@ struct ContentView: View {
                     // "leaf"
                 }
         }
+        .accentColor(Color("Deep green"))
     }
-    
-    private var tabBackground: some View {
-        Rectangle()
-            .fill(Color.clear)
-            .frame(height: 5, alignment: .bottom)
-            .background(Color("Light off white"))
-            // .background(Color.green.opacity(0.2))
-    }
-    
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -31,8 +31,6 @@ struct ImageHeaderComponent: View {
             Image(imagePath)
                 .resizable()
                 .scaledToFill()
-            // .frame(width: gr.size.width)
-            // .ignoresSafeArea()
                 .mask {
                     Rectangle()
                         .fill(whiteGradient)
@@ -40,12 +38,14 @@ struct ImageHeaderComponent: View {
                 .overlay(alignment: .bottom) {
                     if titleType == .appTitle{
                         Text(title)
-                            .font(Font.custom("Montserrat-bold", size: 40))
+                            .font(Font.custom("Montserrat-SemiBold", size: Constants.appTitle))
+                            .foregroundColor(Color("Deep green"))
                             .frame(maxWidth: .infinity, alignment: .center)
                             .padding()
                     } else {
                         Text(title)
-                            .font(Font.custom("Montserrat-regular", size: 32))
+                            .font(Font.custom("Montserrat-Regular", size: Constants.tabTitle))
+                            .foregroundColor(Color("Deep green"))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()
                     }

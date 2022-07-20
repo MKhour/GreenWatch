@@ -14,6 +14,7 @@ struct CarbonView: View {
             Spacer()
         }
         .background(Color.white)
+        .ignoresSafeArea()
     }
 }
 

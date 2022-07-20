@@ -14,6 +14,7 @@ struct GovernmentView: View {
             Spacer()
         }
         .background(Color.white)
+        .ignoresSafeArea()
     }
 }
 
