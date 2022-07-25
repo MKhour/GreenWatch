@@ -18,6 +18,7 @@
 		0E50189C2887C3AA0099B31D /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189B2887C3AA0099B31D /* Montserrat-MediumItalic.otf */; };
 		0E50189E2887C3B30099B31D /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189D2887C3B30099B31D /* Montserrat-SemiBold.otf */; };
 		0E5018A02887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E50189F2887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf */; };
+		0E6A6A4E288DE70C000910A8 /* ImageNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A6A4D288DE70B000910A8 /* ImageNavBarView.swift */; };
 		0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */; };
 		0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE228837D92009141E9 /* ContentView.swift */; };
 		0EE0DEE528837D94009141E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE428837D94009141E9 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		0E50189D2887C3B30099B31D /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "../../../../../Downloads/montserrat/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		0E50189F2887C3BC0099B31D /* Montserrat-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.otf"; path = "../../../../../Downloads/montserrat/Montserrat-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		0E5018A12887C40B0099B31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E6A6A4D288DE70B000910A8 /* ImageNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNavBarView.swift; sourceTree = "<group>"; };
 		0EE0DEDD28837D92009141E9 /* GreenWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchApp.swift; sourceTree = "<group>"; };
 		0EE0DEE228837D92009141E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				0E5018862887AD700099B31D /* ImageHeaderComponent.swift */,
+				0E6A6A4D288DE70B000910A8 /* ImageNavBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */,
 				0EE0DF122887980B009141E9 /* LandingView.swift in Sources */,
 				0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */,
+				0E6A6A4E288DE70C000910A8 /* ImageNavBarView.swift in Sources */,
 				0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */,
 				0E5018872887AD700099B31D /* ImageHeaderComponent.swift in Sources */,
 				0EE0DF0D2883A2AC009141E9 /* NewsAPI.swift in Sources */,

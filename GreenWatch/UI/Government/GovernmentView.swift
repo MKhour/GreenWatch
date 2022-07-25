@@ -9,12 +9,24 @@ import SwiftUI
 
 struct GovernmentView: View {
     var body: some View {
-        ScrollView {
-            ImageHeaderComponent(title: "Government".uppercased(), titleType: .tabTitle, imagePath: "cropped government photo")
-            Spacer()
+        ImageScrollBarView(
+                title: "GOVERNMENT",
+                titleType: .tabTitle,
+                imageURL: "cropped government photo"
+        )
+        {
+            VStack(spacing: 80) {
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+            }
         }
-        .background(Color.white)
-        .ignoresSafeArea()
     }
 }
 

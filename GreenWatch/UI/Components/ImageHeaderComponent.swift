@@ -3,7 +3,7 @@
 //  GreenWatch
 //
 //  Created by Madelyn Khoury on 7/19/22.
-//
+//  Copyright Madelyn Khoury 2022.
 
 import SwiftUI
 import UIKit
@@ -18,11 +18,20 @@ struct ImageHeaderComponent: View {
     private var title: String
     private var titleType: TitleType
     private var imagePath: String
+    private var height: CGFloat? = 300
+    private var minimumHeight: CGFloat = 100
     
-    init(title: String, titleType: TitleType, imagePath: String) {
+    init(title: String, titleType: TitleType, imagePath: String, height: CGFloat?) {
         self.title = title
         self.titleType = titleType
         self.imagePath = imagePath
+        if height != nil {
+            if let height = height as? CGFloat, height > minimumHeight {
+                self.height = height
+            } else {
+                self.height = minimumHeight
+            }
+        }
     }
     
     var body: some View {
@@ -31,6 +40,7 @@ struct ImageHeaderComponent: View {
             Image(imagePath)
                 .resizable()
                 .scaledToFill()
+                .frame(height: height)
                 .mask {
                     Rectangle()
                         .fill(whiteGradient)
@@ -65,6 +75,7 @@ struct ImageHeaderComponent: View {
 
 struct ImageHeaderComponent_Previews: PreviewProvider {
     static var previews: some View {
-        ImageHeaderComponent(title: "Test Title", titleType: .appTitle, imagePath: "cropped landing photo")
+        ImageHeaderComponent(title: "Test Title", titleType: .tabTitle, imagePath: "cropped landing photo", height: nil)
+            .ignoresSafeArea()
     }
 }

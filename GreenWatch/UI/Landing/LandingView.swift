@@ -9,12 +9,24 @@ import SwiftUI
 
 struct LandingView: View {
     var body: some View {
-        ScrollView {
-            ImageHeaderComponent(title: "Green Watch".uppercased(), titleType: .appTitle, imagePath: "cropped landing photo")
-            Spacer()
+        ImageScrollBarView(
+                title: "GREEN WATCH",
+                titleType: .appTitle,
+                imageURL: "cropped landing photo"
+        )
+        {
+            VStack(spacing: 80) {
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+            }
         }
-        .background(Color.white)
-        .ignoresSafeArea()
     }
 }
 

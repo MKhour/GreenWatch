@@ -9,12 +9,24 @@ import SwiftUI
 
 struct CarbonView: View {
     var body: some View {
-        ScrollView {
-            ImageHeaderComponent(title: "Carbon".uppercased(), titleType: .tabTitle, imagePath: "cropped carbon photo")
-            Spacer()
+        ImageScrollBarView(
+                title: "CARBON",
+                titleType: .tabTitle,
+                imageURL: "cropped carbon photo"
+        )
+        {
+            VStack(spacing: 80) {
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+                Text("Test content")
+            }
         }
-        .background(Color.white)
-        .ignoresSafeArea()
     }
 }
 
