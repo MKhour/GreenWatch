@@ -7,6 +7,8 @@
 
 // Idea for generic type from https://www.fivestars.blog/articles/swiftui-patter-passing-views/
 
+// future dev: look into having image offset from body and keep that distance as the body content moves
+
 import SwiftUI
 
 struct ImageScrollBarView<Content>: View where Content: View {
@@ -19,6 +21,8 @@ struct ImageScrollBarView<Content>: View where Content: View {
     }
     private var bodyContent: Content
     private var minimumHeaderHeight: CGFloat = 100
+    private var maximumHeaderHeight: CGFloat = 300
+    private var transitionOffset: CGFloat = 5
     
     init(
         title: String,
@@ -58,18 +62,19 @@ struct ImageScrollBarView<Content>: View where Content: View {
                 }
             }
         }
-        .ignoresSafeArea()
     }
     
     private func findHeaderSize(_ currentOffset: CGFloat) -> Void {
         if headerHeight < minimumHeaderHeight {
             headerHeight = minimumHeaderHeight
-        } else if currentOffset < 0 {
-            headerHeight = headerHeight + currentOffset
-        } else if headerHeight < 300{
-            headerHeight = headerHeight + currentOffset
-        } else {
-            headerHeight = 300
+        }
+        else if currentOffset < 0 {
+            headerHeight = headerHeight - transitionOffset
+        } else if headerHeight < maximumHeaderHeight {
+            headerHeight = headerHeight + transitionOffset
+        }
+        else {
+            headerHeight = maximumHeaderHeight
         }
     }
     

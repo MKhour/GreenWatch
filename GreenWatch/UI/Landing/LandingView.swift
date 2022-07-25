@@ -16,15 +16,15 @@ struct LandingView: View {
         )
         {
             VStack(spacing: 80) {
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
-                Text("Test content")
+                Text("Test content 1")
+                Text("Test content 2")
+                Text("Test content 3")
+                Text("Test content 4")
+                Text("Test content 5")
+                Text("Test content 6")
+                Text("Test content 7")
+                Text("Test content 8")
+                Text("Test content 9")
             }
         }
     }

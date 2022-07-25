@@ -60,7 +60,9 @@ struct ImageHeaderComponent: View {
                             .padding()
                     }
                 }
+                .background(.white)
         }
+        .ignoresSafeArea()
         
     }
     
