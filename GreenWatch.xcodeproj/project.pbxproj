@@ -77,6 +77,14 @@
 		0E15118E28971108008DC46D /* Montserrat-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E15118328971108008DC46D /* Montserrat-SemiBoldItalic.otf */; };
 		0E15118F28971108008DC46D /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E15118428971108008DC46D /* Montserrat-Light.otf */; };
 		0E15119028971108008DC46D /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E15118428971108008DC46D /* Montserrat-Light.otf */; };
+		0E15119228972202008DC46D /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E15119128972202008DC46D /* Montserrat-MediumItalic.otf */; };
+		0E15119328972202008DC46D /* Montserrat-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E15119128972202008DC46D /* Montserrat-MediumItalic.otf */; };
+		0E1511952897220A008DC46D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E1511942897220A008DC46D /* Montserrat-Regular.otf */; };
+		0E1511962897220A008DC46D /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E1511942897220A008DC46D /* Montserrat-Regular.otf */; };
+		0E151198289728BF008DC46D /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E151197289728BF008DC46D /* NewsArticle.swift */; };
+		0E151199289728C0008DC46D /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E151197289728BF008DC46D /* NewsArticle.swift */; };
+		0E15119C28972E92008DC46D /* NewsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15119B28972E92008DC46D /* NewsError.swift */; };
+		0E15119D28972E92008DC46D /* NewsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15119B28972E92008DC46D /* NewsError.swift */; };
 		0E5018872887AD700099B31D /* ImageHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5018862887AD700099B31D /* ImageHeaderComponent.swift */; };
 		0E5018892887C1F20099B31D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5018882887C1F20099B31D /* Constants.swift */; };
 		0E6A6A4E288DE70C000910A8 /* ImageScrollBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A6A4D288DE70B000910A8 /* ImageScrollBarView.swift */; };
@@ -87,8 +95,8 @@
 		0EE0DEF228837D94009141E9 /* GreenWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEF128837D94009141E9 /* GreenWatchTests.swift */; };
 		0EE0DEFC28837D94009141E9 /* GreenWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEFB28837D94009141E9 /* GreenWatchUITests.swift */; };
 		0EE0DEFE28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */; };
-		0EE0DF0B28838B92009141E9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0A28838B91009141E9 /* Response.swift */; };
-		0EE0DF0D2883A2AC009141E9 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */; };
+		0EE0DF0B28838B92009141E9 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0A28838B91009141E9 /* NewsResponse.swift */; };
+		0EE0DF0D2883A2AC009141E9 /* NewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0C2883A2AC009141E9 /* NewsDataSource.swift */; };
 		0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF0F288797AD009141E9 /* LandingViewModel.swift */; };
 		0EE0DF122887980B009141E9 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF112887980B009141E9 /* LandingView.swift */; };
 		0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DF172887987F009141E9 /* GovernmentViewModel.swift */; };
@@ -150,6 +158,10 @@
 		0E15118228971107008DC46D /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		0E15118328971108008DC46D /* Montserrat-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		0E15118428971108008DC46D /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		0E15119128972202008DC46D /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
+		0E1511942897220A008DC46D /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		0E151197289728BF008DC46D /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
+		0E15119B28972E92008DC46D /* NewsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsError.swift; sourceTree = "<group>"; };
 		0E5018862887AD700099B31D /* ImageHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHeaderComponent.swift; sourceTree = "<group>"; };
 		0E5018882887C1F20099B31D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E5018A12887C40B0099B31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -164,8 +176,8 @@
 		0EE0DEF728837D94009141E9 /* GreenWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0DEFB28837D94009141E9 /* GreenWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchUITests.swift; sourceTree = "<group>"; };
 		0EE0DEFD28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0EE0DF0A28838B91009141E9 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		0EE0DF0A28838B91009141E9 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		0EE0DF0C2883A2AC009141E9 /* NewsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataSource.swift; sourceTree = "<group>"; };
 		0EE0DF0F288797AD009141E9 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 		0EE0DF112887980B009141E9 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		0EE0DF172887987F009141E9 /* GovernmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GovernmentViewModel.swift; sourceTree = "<group>"; };
@@ -208,8 +220,10 @@
 				0E1511372897104D008DC46D /* Montserrat-ExtraLightItalic.otf */,
 				0E15118428971108008DC46D /* Montserrat-Light.otf */,
 				0E15117F28971107008DC46D /* Montserrat-LightItalic.otf */,
-				0E15118228971107008DC46D /* Montserrat-Medium.otf */,
+				0E1511942897220A008DC46D /* Montserrat-Regular.otf */,
 				0E151179289710B7008DC46D /* Montserrat-Italic.otf */,
+				0E15118228971107008DC46D /* Montserrat-Medium.otf */,
+				0E15119128972202008DC46D /* Montserrat-MediumItalic.otf */,
 				0E1511222897104D008DC46D /* Montserrat-Bold.otf */,
 				0E1511282897104D008DC46D /* Montserrat-BoldItalic.otf */,
 				0E15118128971107008DC46D /* Montserrat-SemiBold.otf */,
@@ -241,6 +255,14 @@
 			path = montserrat;
 			sourceTree = "<group>";
 		};
+		0E15119A28972E82008DC46D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E15119B28972E92008DC46D /* NewsError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0E5018822887ACD50099B31D /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +279,8 @@
 		0E5018832887ACF90099B31D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				0EE0DF0A28838B91009141E9 /* Response.swift */,
+				0EE0DF0A28838B91009141E9 /* NewsResponse.swift */,
+				0E151197289728BF008DC46D /* NewsArticle.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -265,7 +288,8 @@
 		0E5018842887AD130099B31D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0EE0DF0C2883A2AC009141E9 /* NewsAPI.swift */,
+				0E15119A28972E82008DC46D /* Model */,
+				0EE0DF0C2883A2AC009141E9 /* NewsDataSource.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -475,6 +499,7 @@
 				0E1511452897104D008DC46D /* MontserratAlternates-Black.otf in Resources */,
 				0E15115D2897104D008DC46D /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				0E1511772897104D008DC46D /* MontserratAlternates-Italic.otf in Resources */,
+				0E1511952897220A008DC46D /* Montserrat-Regular.otf in Resources */,
 				0E15113F2897104D008DC46D /* Montserrat-Bold.otf in Resources */,
 				0E1511672897104D008DC46D /* Montserrat-ExtraBold.otf in Resources */,
 				0E1511592897104D008DC46D /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
@@ -489,6 +514,7 @@
 				0E1511512897104D008DC46D /* MontserratAlternates-MediumItalic.otf in Resources */,
 				0E1511732897104D008DC46D /* Montserrat-Black.otf in Resources */,
 				0E15115B2897104D008DC46D /* MontserratAlternates-Thin.otf in Resources */,
+				0E15119228972202008DC46D /* Montserrat-MediumItalic.otf in Resources */,
 				0E15114B2897104D008DC46D /* Montserrat-BoldItalic.otf in Resources */,
 				0E15116D2897104D008DC46D /* MontserratAlternates-ExtraLight.otf in Resources */,
 				0E1511612897104D008DC46D /* MontserratAlternates-SemiBold.otf in Resources */,
@@ -534,12 +560,14 @@
 				0E1511662897104D008DC46D /* MontserratAlternates-BoldItalic.otf in Resources */,
 				0E15119028971108008DC46D /* Montserrat-Light.otf in Resources */,
 				0E1511782897104D008DC46D /* MontserratAlternates-Italic.otf in Resources */,
+				0E15119328972202008DC46D /* Montserrat-MediumItalic.otf in Resources */,
 				0E1511522897104D008DC46D /* MontserratAlternates-MediumItalic.otf in Resources */,
 				0E1511602897104D008DC46D /* Montserrat-ExtraBoldItalic.otf in Resources */,
 				0E15115A2897104D008DC46D /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
 				0E15118A28971108008DC46D /* Montserrat-SemiBold.otf in Resources */,
 				0E1511622897104D008DC46D /* MontserratAlternates-SemiBold.otf in Resources */,
 				0E1511702897104D008DC46D /* MontserratAlternates-Regular.otf in Resources */,
+				0E1511962897220A008DC46D /* Montserrat-Regular.otf in Resources */,
 				0E1511462897104D008DC46D /* MontserratAlternates-Black.otf in Resources */,
 				0E1511422897104D008DC46D /* Montserrat-BlackItalic.otf in Resources */,
 				0E1511502897104D008DC46D /* Montserrat-Thin.otf in Resources */,
@@ -570,14 +598,16 @@
 				0E5018892887C1F20099B31D /* Constants.swift in Sources */,
 				0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */,
 				0EE0DF1A2887989D009141E9 /* CarbonViewModel.swift in Sources */,
+				0E15119C28972E92008DC46D /* NewsError.swift in Sources */,
 				0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */,
 				0EE0DF122887980B009141E9 /* LandingView.swift in Sources */,
 				0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */,
+				0E151198289728BF008DC46D /* NewsArticle.swift in Sources */,
 				0E6A6A4E288DE70C000910A8 /* ImageScrollBarView.swift in Sources */,
 				0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */,
 				0E5018872887AD700099B31D /* ImageHeaderComponent.swift in Sources */,
-				0EE0DF0D2883A2AC009141E9 /* NewsAPI.swift in Sources */,
-				0EE0DF0B28838B92009141E9 /* Response.swift in Sources */,
+				0EE0DF0D2883A2AC009141E9 /* NewsDataSource.swift in Sources */,
+				0EE0DF0B28838B92009141E9 /* NewsResponse.swift in Sources */,
 				0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +625,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE0DEFE28837D94009141E9 /* GreenWatchUITestsLaunchTests.swift in Sources */,
+				0E15119D28972E92008DC46D /* NewsError.swift in Sources */,
+				0E151199289728C0008DC46D /* NewsArticle.swift in Sources */,
 				0EE0DEFC28837D94009141E9 /* GreenWatchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

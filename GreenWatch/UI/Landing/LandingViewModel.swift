@@ -9,5 +9,16 @@ import Foundation
 
 class LandingViewModel: ObservableObject {
     
-    init() { }
+    @Published var articles: [NewsArticle]?
+    
+    init() {}
+    
+    func start() async {
+        do {
+            articles = try await NewsDataSource.shared.fetchArticles(for: "climatechange")
+            if Task.isCancelled { return }
+        } catch {
+            if Task.isCancelled { return }
+        }
+    }
 }

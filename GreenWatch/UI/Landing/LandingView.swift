@@ -8,23 +8,41 @@
 import SwiftUI
 
 struct LandingView: View {
+    @StateObject private var viewModel = LandingViewModel()
+    
     var body: some View {
         ImageScrollBarView(
-                title: "GREEN WATCH",
-                titleType: .appTitle,
-                imageURL: "cropped landing photo"
+            title: "GREEN WATCH",
+            titleType: .appTitle,
+            imageURL: "cropped landing photo"
         )
         {
-            VStack(spacing: 80) {
-                Text("Test content 1")
-                Text("Test content 2")
-                Text("Test content 3")
-                Text("Test content 4")
-                Text("Test content 5")
-                Text("Test content 6")
-                Text("Test content 7")
-                Text("Test content 8")
-                Text("Test content 9")
+            VStack(alignment: .leading, spacing: 14) {
+                Text(
+                    """
+                    Thanks for joining us in our journey to protect the environment.
+                    Your voice matters!
+                    """
+                )
+                .font(Constants.subtitleFont)
+                .multilineTextAlignment(.center)
+                .lineSpacing(4)
+                .padding()
+                
+                Text("NEWS")
+                    .font(Constants.headingFont)
+                
+                ForEach(viewModel.articles ?? [], id: \.title) { article in
+                    Text("\(article.title)")
+                }
+                
+            }
+            .padding(.horizontal, 14)
+            .foregroundColor(Color("Deep green"))
+        }
+        .onAppear {
+            Task {
+                await viewModel.start()
             }
         }
     }

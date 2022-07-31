@@ -41,7 +41,7 @@ struct ImageScrollBarView<Content>: View where Content: View {
             ZStack {
                 // body
                 bodyContent
-                    .padding()
+                    // .padding()
                     .padding(.top, headerHeight)
                     .font(Constants.bodyFont)
                 

@@ -12,7 +12,7 @@ import UIKit
 struct Constants {
     
     static let appTitleFont: Font? = Font.custom("Montserrat-Bold", size: appTitleSize)
-    static let tabTitleFont: Font? = Font.custom("Montserrat-Medium", size: tabTitleSize)
+    static let tabTitleFont: Font? = Font.custom("Montserrat-Regular", size: tabTitleSize)
     static let subtitleFont: Font? = Font.custom("Montserrat-Light", size: subtitleSize)
     static let headingFont: Font? = Font.custom("Montserrat-Light", size: headingSize)
     static let bodyFont: Font? = Font.custom("Montserrat-Light", size: bodySize)
