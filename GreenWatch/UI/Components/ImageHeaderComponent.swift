@@ -48,13 +48,13 @@ struct ImageHeaderComponent: View {
                 .overlay(alignment: .bottom) {
                     if titleType == .appTitle{
                         Text(title)
-                            .font(Font.custom("Montserrat-SemiBold", size: Constants.appTitle))
+                            .font(Constants.appTitleFont)
                             .foregroundColor(Color("Deep green"))
                             .frame(maxWidth: .infinity, alignment: .center)
                             .padding()
                     } else {
                         Text(title)
-                            .font(Font.custom("Montserrat-Regular", size: Constants.tabTitle))
+                            .font(Constants.tabTitleFont)
                             .foregroundColor(Color("Deep green"))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding()

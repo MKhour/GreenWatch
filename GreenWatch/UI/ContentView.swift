@@ -12,7 +12,6 @@ struct ContentView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color.white.opacity(0.5))
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color("Deeper offwhite"))
-        // UITabBar.appearance().selectedItem = UIColor(Color("Deep green"))
     }
     
     var body: some View {

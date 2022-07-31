@@ -43,6 +43,7 @@ struct ImageScrollBarView<Content>: View where Content: View {
                 bodyContent
                     .padding()
                     .padding(.top, headerHeight)
+                    .font(Constants.bodyFont)
                 
                 // header
                 GeometryReader { gr in

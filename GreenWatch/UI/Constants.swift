@@ -6,11 +6,21 @@
 //  Copyright 2022 Madelyn Khoury.
 
 import Foundation
+import SwiftUI
 import UIKit
 
 struct Constants {
     
-    static let primaryFont = UIFont(name: "Montserrat-Regular", size: tabTitle)
-    static let appTitle: CGFloat = 40
-    static let tabTitle: CGFloat = 32
+    static let appTitleFont: Font? = Font.custom("Montserrat-Bold", size: appTitleSize)
+    static let tabTitleFont: Font? = Font.custom("Montserrat-Medium", size: tabTitleSize)
+    static let subtitleFont: Font? = Font.custom("Montserrat-Light", size: subtitleSize)
+    static let headingFont: Font? = Font.custom("Montserrat-Light", size: headingSize)
+    static let bodyFont: Font? = Font.custom("Montserrat-Light", size: bodySize)
+    static let italicFont: Font? = Font.custom("Montserrat-Italic", size: tabTitleSize)
+    
+    static let appTitleSize: CGFloat = 40
+    static let tabTitleSize: CGFloat = 32
+    static let subtitleSize: CGFloat = 16
+    static let headingSize: CGFloat = 24
+    static let bodySize: CGFloat = 12
 }
