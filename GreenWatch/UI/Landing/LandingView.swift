@@ -18,7 +18,7 @@ struct LandingView: View {
             imageURL: "cropped landing photo"
         )
         {
-            VStack(alignment: .leading, spacing: 14) {
+            VStack(spacing: 20) {
                 Text(
                     """
                     Thanks for joining us in our journey to protect the environment.
@@ -28,10 +28,10 @@ struct LandingView: View {
                 .font(Constants.subtitleFont)
                 .multilineTextAlignment(.center)
                 .lineSpacing(4)
-                .padding(.bottom)
                 
                 Text("NEWS")
                     .font(Constants.headingFont)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 
                 ForEach(viewModel.articles ?? [], id: \.url) { article in
                     Link(destination: article.articleURL) {
@@ -40,7 +40,7 @@ struct LandingView: View {
                 }
                 
             }
-            .padding(.horizontal, 14)
+            .padding(.horizontal, 20)
             .foregroundColor(Color("Deep green"))
         }
         .onAppear {

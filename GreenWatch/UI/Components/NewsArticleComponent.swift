@@ -39,7 +39,7 @@ struct NewsArticleComponent: View {
                     .aspectRatio(contentMode: .fit)
                     .clipped()
             @unknown default:
-                Image("cropped carbon photo")
+                Image("cropped news photo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipped()
@@ -68,9 +68,3 @@ struct NewsArticleComponent: View {
     }
     
 }
-
-//struct NewsArticleComponent_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NewsArticleComponent()
-//    }
-//}
