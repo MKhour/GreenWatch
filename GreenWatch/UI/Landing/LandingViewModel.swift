@@ -15,7 +15,7 @@ class LandingViewModel: ObservableObject {
     
     func start() async {
         do {
-            articles = try await NewsDataSource.shared.fetchArticles(for: "climatechange")
+            articles = try await NewsDataSource.shared.fetchArticles(for: "climate change OR environment OR nature")
             if Task.isCancelled { return }
         } catch {
             if Task.isCancelled { return }
