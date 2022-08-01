@@ -81,26 +81,26 @@ struct ImageScrollBarView<Content>: View where Content: View {
     
 }
 
-struct ImageNavBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageScrollBarView(
-            title: "Title",
-            titleType: .tabTitle,
-            imageURL: "cropped government photo"
-        ) {
-            VStack(spacing: 100) {
-                Text("Test if this will work")
-                Text("Test 2")
-                Text("Test 3")
-                Text("Test 4")
-                Text("Test 5")
-                Text("Test 2")
-                Text("Test 3")
-                Text("Test 4")
-                Text("Test 5")
-                Text("Test 2")
-            }
-            .padding(.vertical, 30)
-        }
-    }
-}
+//struct ImageNavBarView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ImageScrollBarView(
+//            title: "Title",
+//            titleType: .tabTitle,
+//            imageURL: "cropped government photo"
+//        ) {
+//            VStack(spacing: 100) {
+//                Text("Test if this will work")
+//                Text("Test 2")
+//                Text("Test 3")
+//                Text("Test 4")
+//                Text("Test 5")
+//                Text("Test 2")
+//                Text("Test 3")
+//                Text("Test 4")
+//                Text("Test 5")
+//                Text("Test 2")
+//            }
+//            .padding(.vertical, 30)
+//        }
+//    }
+//}

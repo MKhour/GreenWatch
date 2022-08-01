@@ -6,6 +6,7 @@
 //  Copyright 2022 Madelyn Khoury.
 
 import SwiftUI
+import WebKit
 
 struct LandingView: View {
     @StateObject private var viewModel = LandingViewModel()
@@ -27,13 +28,14 @@ struct LandingView: View {
                 .font(Constants.subtitleFont)
                 .multilineTextAlignment(.center)
                 .lineSpacing(4)
-                .padding()
                 
                 Text("NEWS")
                     .font(Constants.headingFont)
                 
-                ForEach(viewModel.articles ?? [], id: \.title) { article in
-                    Text("\(article.title)")
+                ForEach(viewModel.articles ?? [], id: \.url) { article in
+                    Link(destination: article.articleURL) {
+                        NewsArticleComponent(article: article)
+                    }
                 }
                 
             }

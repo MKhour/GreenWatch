@@ -12,7 +12,7 @@ import Foundation
 struct NewsDataSource {
     
     static let shared = NewsDataSource()
-    private let apiKey = "apiKey"
+    private let apiKey = "51835e67f4d84532a3972f16ee3ffb84"
     private let session = URLSession.shared
     
     func fetchArticles(for keyword: String) async throws -> [NewsArticle] {

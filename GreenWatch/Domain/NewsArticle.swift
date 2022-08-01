@@ -15,7 +15,14 @@ struct NewsArticle: Codable {
     let urlToImage: String?
     let publishedAt: String?
     
-    var clickableURL: URL {
+    var articleURL: URL {
         URL(string: url)!
+    }
+    
+    var imageURL: URL? {
+        if let urlToImage = urlToImage {
+            return URL(string: urlToImage)
+        }
+        return nil
     }
 }
