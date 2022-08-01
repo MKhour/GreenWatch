@@ -28,6 +28,7 @@ struct LandingView: View {
                 .font(Constants.subtitleFont)
                 .multilineTextAlignment(.center)
                 .lineSpacing(4)
+                .padding(.bottom)
                 
                 Text("NEWS")
                     .font(Constants.headingFont)

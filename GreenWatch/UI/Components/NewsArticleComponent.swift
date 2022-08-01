@@ -17,12 +17,14 @@ struct NewsArticleComponent: View {
     var body: some View {
         ZStack {
             image
-            
-            HStack {
-                Spacer()
-                articleInfo
-                    .frame(width: 220)
+            .overlay {
+                HStack {
+                    Spacer()
+                    articleInfo
+                        .frame(width: 220)
+                }
             }
+            
         }
         .clipShape(RoundedRectangle(cornerRadius: 12))
         
@@ -35,13 +37,12 @@ struct NewsArticleComponent: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    // .clipped()
+                    .clipped()
             @unknown default:
-                Image("cropped landing photo")
+                Image("cropped carbon photo")
                     .resizable()
-                    // .scaledToFit()
                     .aspectRatio(contentMode: .fit)
-                    // .clipped()
+                    .clipped()
             }
         }
     }
@@ -49,16 +50,20 @@ struct NewsArticleComponent: View {
     private var articleInfo: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(Color("Translucent light off white").opacity(0.9))
+                .foregroundColor(Color("Translucent light off white"))
             
             VStack(alignment: .leading, spacing: 6) {
                 Text(article.title)
+                    .font(Constants.articleTitle)
                 
                 Text(article.description ?? "")
+                    .font(Constants.articleDescriptionFont)
                     .truncationMode(.tail)
             }
             .foregroundColor(Color("Deep green"))
-            .padding(8)
+            .multilineTextAlignment(.leading)
+            .lineSpacing(4)
+            .padding(12)
         }
     }
     
