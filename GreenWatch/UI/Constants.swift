@@ -17,6 +17,8 @@ struct Constants {
     static let headingFont: Font? = Font.custom("Montserrat-Light", size: headingSize)
     static let articleTitle: Font? = Font.custom("Montserrat-Medium", size: subtitleSize)
     static let articleDescriptionFont: Font? = Font.custom("Montserrat-Regular", size: bodySize)
+    static let officialName: Font? = Font.custom("Montserrat-SemiBold", size: subtitleSize)
+    static let officialPosition: Font? = Font.custom("Montserrat-Regular", size: 14)
     static let bodyFont: Font? = Font.custom("Montserrat-Light", size: bodySize)
     static let italicFont: Font? = Font.custom("Montserrat-Italic", size: bodySize)
     

@@ -12,9 +12,9 @@ struct GovernmentView: View {
     
     var body: some View {
         ImageScrollBarView(
-                title: "GOVERNMENT",
-                titleType: .tabTitle,
-                imageURL: "cropped government photo"
+            title: "GOVERNMENT",
+            titleType: .tabTitle,
+            imageURL: "cropped government photo"
         )
         {
             VStack(alignment: .leading, spacing: 20) {
@@ -28,7 +28,19 @@ struct GovernmentView: View {
                 .multilineTextAlignment(.leading)
                 .lineSpacing(4)
                 
-                Text("News from Your Officials")
+                Text("Your Officials")
+                    .font(Constants.headingFont)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(viewModel.officials ?? [], id: \.name) { official in
+                            OfficialComponent(viewModel: OfficialComponentViewModel(official: official))
+                        }
+                    }
+                }
+                
+                Text("News From Your Officials")
                     .font(Constants.headingFont)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
@@ -42,11 +54,11 @@ struct GovernmentView: View {
             .padding(.horizontal, 20)
             .foregroundColor(Color("Deep green"))
         }
-        .onAppear {
-            Task {
-                await viewModel.start()
-            }
-        }
+//        .onAppear {
+//            Task {
+//                await viewModel.start()
+//            }
+//        }
     }
 }
 

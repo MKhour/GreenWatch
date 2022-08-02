@@ -13,7 +13,7 @@ struct OfficialsDataSource {
     private let apiKey = "apiKey"
     private let session = URLSession.shared
     
-    func fetchOfficials(for address: String) async throws -> [NewsArticle] {
+    func fetchOfficials(for address: String) async throws -> [Official] {
         let request = createURL(for: address)
         
         let (data, response) = try await URLSession.shared.data(from: request)
@@ -22,13 +22,18 @@ struct OfficialsDataSource {
             throw NSError()
         }
         
-        print("RESPONSE: \(response)")
-        
         switch response.statusCode {
         case 200:
-           // let newsResponse = try JSONDecoder().decode(NewsResponse.self, from: data)
-           // return newsResponse.articles ?? []
-            return []
+            let officialsResponse = try JSONDecoder().decode(OfficialsResponse.self, from: data)
+            var officials: [Official] = []
+            
+            for office in officialsResponse.offices ?? [] {
+                for index in office.officialIndices ?? [] {
+                    guard let officialResponse = officialsResponse.officials?[index] else { break }
+                    officials.append(contentsOf: [Official(from: officialResponse, office)])
+                }
+            }
+            return officials
         default:
             throw NSError()
         }
@@ -42,5 +47,5 @@ struct OfficialsDataSource {
         url += "&key=\(apiKey)"
         return URL(string: url)!
     }
-
+    
 }

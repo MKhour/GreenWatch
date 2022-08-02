@@ -10,25 +10,38 @@ import Foundation
 class GovernmentViewModel: ObservableObject {
     
     @Published var articles: [NewsArticle]?
+    @Published var officials: [Official]?
+    var address: String? = "110 Stadium road, charlottesville va, 22903"
     
-    init() {}
+    init() {
+        DispatchQueue.main.async {
+            Task {
+                await self.start()
+            }
+        }
+    }
     
     func start() async {
         do {
-            articles = try await OfficialsDataSource.shared.fetchOfficials(for: "110 stadium road, charlottesville va, 22903")
-            // articles?.append(contentsOf: try await NewsDataSource.shared.fetchArticles(for: "jimryan"))
+            officials = try await OfficialsDataSource.shared.fetchOfficials(for: address ?? "")
             if Task.isCancelled { return }
         } catch {
             if Task.isCancelled { return }
         }
         
+        guard let officials = officials else {
+            return
+        }
         
         do {
-            articles = try await NewsDataSource.shared.fetchArticles(for: "(glenn AND youngkin) OR (youngkin AND virginia) OR (youngkin AND governor)")
-            // articles?.append(contentsOf: try await NewsDataSource.shared.fetchArticles(for: "jimryan"))
+            articles = []
+            for official in officials {
+                articles?.append(contentsOf: try await NewsDataSource.shared.fetchArticles(for: "\(official.name)"))
+            }
             if Task.isCancelled { return }
         } catch {
             if Task.isCancelled { return }
         }
     }
+    
 }

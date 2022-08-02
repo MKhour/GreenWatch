@@ -43,11 +43,11 @@ struct LandingView: View {
             .padding(.horizontal, 20)
             .foregroundColor(Color("Deep green"))
         }
-        .onAppear {
-            Task {
-                await viewModel.start()
-            }
-        }
+//        .onAppear {
+//            Task {
+//                await viewModel.start()
+//            }
+//        }
     }
 }
 

@@ -92,6 +92,12 @@
 		0E6A6A4E288DE70C000910A8 /* ImageScrollBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6A6A4D288DE70B000910A8 /* ImageScrollBarView.swift */; };
 		0EDCF6AC28975D7300018866 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6AB28975D7300018866 /* WebView.swift */; };
 		0EDCF6AE28977BB100018866 /* OfficialsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6AD28977BB100018866 /* OfficialsDataSource.swift */; };
+		0EDCF6B028978AD000018866 /* OfficialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6AF28978ACF00018866 /* OfficialsResponse.swift */; };
+		0EDCF6B228978C3100018866 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6B128978C3100018866 /* Official.swift */; };
+		0EDCF6B428978C4C00018866 /* OfficeRepsonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6B328978C4C00018866 /* OfficeRepsonse.swift */; };
+		0EDCF6B628978F0000018866 /* OfficialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6B528978F0000018866 /* OfficialComponent.swift */; };
+		0EDCF6B82897990400018866 /* OfficialResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6B72897990400018866 /* OfficialResponse.swift */; };
+		0EDCF6BA2898C11700018866 /* OfficialComponentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCF6B92898C11600018866 /* OfficialComponentViewModel.swift */; };
 		0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */; };
 		0EE0DEE328837D92009141E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE228837D92009141E9 /* ContentView.swift */; };
 		0EE0DEE528837D94009141E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EE0DEE428837D94009141E9 /* Assets.xcassets */; };
@@ -173,6 +179,12 @@
 		0E6A6A4D288DE70B000910A8 /* ImageScrollBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollBarView.swift; sourceTree = "<group>"; };
 		0EDCF6AB28975D7300018866 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		0EDCF6AD28977BB100018866 /* OfficialsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsDataSource.swift; sourceTree = "<group>"; };
+		0EDCF6AF28978ACF00018866 /* OfficialsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsResponse.swift; sourceTree = "<group>"; };
+		0EDCF6B128978C3100018866 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
+		0EDCF6B328978C4C00018866 /* OfficeRepsonse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeRepsonse.swift; sourceTree = "<group>"; };
+		0EDCF6B528978F0000018866 /* OfficialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialComponent.swift; sourceTree = "<group>"; };
+		0EDCF6B72897990400018866 /* OfficialResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialResponse.swift; sourceTree = "<group>"; };
+		0EDCF6B92898C11600018866 /* OfficialComponentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialComponentViewModel.swift; sourceTree = "<group>"; };
 		0EE0DEDD28837D92009141E9 /* GreenWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE0DEE028837D92009141E9 /* GreenWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenWatchApp.swift; sourceTree = "<group>"; };
 		0EE0DEE228837D92009141E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -288,6 +300,10 @@
 			children = (
 				0EE0DF0A28838B91009141E9 /* NewsResponse.swift */,
 				0E151197289728BF008DC46D /* NewsArticle.swift */,
+				0EDCF6AF28978ACF00018866 /* OfficialsResponse.swift */,
+				0EDCF6B128978C3100018866 /* Official.swift */,
+				0EDCF6B72897990400018866 /* OfficialResponse.swift */,
+				0EDCF6B328978C4C00018866 /* OfficeRepsonse.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -309,6 +325,8 @@
 				0E6A6A4D288DE70B000910A8 /* ImageScrollBarView.swift */,
 				0E15119E28973C90008DC46D /* NewsArticleComponent.swift */,
 				0EDCF6AB28975D7300018866 /* WebView.swift */,
+				0EDCF6B528978F0000018866 /* OfficialComponent.swift */,
+				0EDCF6B92898C11600018866 /* OfficialComponentViewModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -605,10 +623,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE0DF1C288798D9009141E9 /* GovernmentView.swift in Sources */,
+				0EDCF6B82897990400018866 /* OfficialResponse.swift in Sources */,
 				0E5018892887C1F20099B31D /* Constants.swift in Sources */,
 				0EE0DF182887987F009141E9 /* GovernmentViewModel.swift in Sources */,
 				0EE0DF1A2887989D009141E9 /* CarbonViewModel.swift in Sources */,
+				0EDCF6B028978AD000018866 /* OfficialsResponse.swift in Sources */,
 				0E15119C28972E92008DC46D /* NewsError.swift in Sources */,
+				0EDCF6B228978C3100018866 /* Official.swift in Sources */,
 				0EE0DF1E2887990F009141E9 /* CarbonView.swift in Sources */,
 				0EE0DF122887980B009141E9 /* LandingView.swift in Sources */,
 				0EDCF6AE28977BB100018866 /* OfficialsDataSource.swift in Sources */,
@@ -617,10 +638,13 @@
 				0E15119F28973C90008DC46D /* NewsArticleComponent.swift in Sources */,
 				0E6A6A4E288DE70C000910A8 /* ImageScrollBarView.swift in Sources */,
 				0EDCF6AC28975D7300018866 /* WebView.swift in Sources */,
+				0EDCF6B428978C4C00018866 /* OfficeRepsonse.swift in Sources */,
 				0EE0DF10288797AD009141E9 /* LandingViewModel.swift in Sources */,
 				0E5018872887AD700099B31D /* ImageHeaderComponent.swift in Sources */,
 				0EE0DF0D2883A2AC009141E9 /* NewsDataSource.swift in Sources */,
 				0EE0DF0B28838B92009141E9 /* NewsResponse.swift in Sources */,
+				0EDCF6B628978F0000018866 /* OfficialComponent.swift in Sources */,
+				0EDCF6BA2898C11700018866 /* OfficialComponentViewModel.swift in Sources */,
 				0EE0DEE128837D92009141E9 /* GreenWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

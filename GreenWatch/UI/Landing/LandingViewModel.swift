@@ -11,7 +11,11 @@ class LandingViewModel: ObservableObject {
     
     @Published var articles: [NewsArticle]?
     
-    init() {}
+    init() {
+//        Task {
+//           await start()
+//        }
+    }
     
     func start() async {
         do {
